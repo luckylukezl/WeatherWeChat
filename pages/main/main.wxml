@@ -1,0 +1,27 @@
+
+<!--pages/main/main.wxml-->
+<view>
+  <view class="main_top">
+  <view>{{date}}</view>
+  <view>
+    <button bindtap="more_button" size="mini" class="more_button">更多</button>
+  </view>
+  
+  </view>
+  <view wx:for="{{cityWeather}}">
+    <template is="weather" data="{{...item}}"/>
+  </view>
+
+  <template name="weather" bindtap="delete_tap">
+    <view class="weatherList">
+      <view class="cityData">{{city}}</view>
+      <view class="cityData">{{tmp}} ℃</view>
+    </view>
+   
+    <view class="weatherList">
+      <view class="cityData">{{sky}}</view>
+      <view class="cityData">PM：{{pm}}</view>
+    </view>
+    <view class="line"></view>
+  </template>
+</view>

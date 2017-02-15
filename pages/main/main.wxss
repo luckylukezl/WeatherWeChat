@@ -1,0 +1,30 @@
+/* pages/main/main.wxss */
+.weatherList{
+    display: flex;
+    flex-direction: row;
+    padding-left: 20rpx;
+}
+
+.main_top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 30rpx;
+    margin-right: 30rpx;
+}
+
+.cityData{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding-top: 35rpx;
+    vertical-align: middle;
+    
+}
+
+.line{
+    margin: 20rpx;
+    height: 1rpx;
+    border-bottom: solid #d3d3d3 1rpx; 
+}
+

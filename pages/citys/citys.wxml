@@ -1,0 +1,32 @@
+<view class="cityContainer">
+  <view wx:for="{{storeCitys}}" wx:for-item="item">
+  <template is="storeCityShow" data="{{...item}}"/>
+  </view>
+  <form bindsubmit="fromSubmit">
+    <input name="input" class="cityInput" placeholder="输入城市：如北京" auto-focus/>
+    <view class="btn-area">
+      <button formType="submit">查询</button>
+    </view>
+  </form>
+  <view wx:for="{{citys}}" wx:for-item="item">
+    <template is="cityShow" data="{{...item}}">
+    </template>
+  </view>
+  <template name="cityShow">
+    <view class="cityList">
+      <view class="cityText">{{prov}}</view>
+      <view class="cityText">{{city}}</view>
+      <switch checked="{{checked}}" type="switch" bindchange="swichChange" data-id="{{id}}" data-province="{{prov}}"  data-city="{{city}}" />
+     
+    </view>
+  </template>
+
+  <template name="storeCityShow">
+    <view class="cityList">
+      <view class="cityText">{{prov}}</view>
+      <view class="cityText">{{city}}</view>
+      <icon type="cancel" bindtap="deleteCity" data-id="{{id}}"></icon>
+     
+    </view>
+  </template>
+</view>

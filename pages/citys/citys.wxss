@@ -1,0 +1,27 @@
+/* pages/citys/citys.wxss */
+.cityContainer{
+    flex-direction: column;
+}
+
+.cityInputView{
+    display: flex;
+    flex-direction: row;
+    padding-left: 20rpx;
+}
+
+.cityInput{
+    border-bottom: solid #000 1rpx;
+}
+
+.cityList{
+    display: flex;
+    flex-direction: row;
+    margin: 20rpx;
+    
+    padding-top: 20rpx;
+}
+
+.cityText{
+    width: 40%;
+    align-items: center;
+}
