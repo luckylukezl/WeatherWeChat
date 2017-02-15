@@ -1,4 +1,3 @@
 # WeatherWeChat
-天气小微信
-
-![Gank](https://github.com/lypeer/wechat-weapp-gank/blob/master/gif/weapp.gif)
+## GIF展示
+![Gank](https://github.com/luckylukezl/WeatherWeChat/blob/master/gif/show.gif)
